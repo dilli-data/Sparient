@@ -666,3 +666,230 @@ section {
         font-size: 1rem;
     }
 }
+
+/* Analytics Tools Section Styles */
+.analytics-tool-card {
+    background: white;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.analytics-tool-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.analytics-tool-card:hover::before {
+    transform: scaleX(1);
+}
+
+.analytics-tool-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--primary-color);
+}
+
+.analytics-tool-card .tool-icon {
+    transition: all 0.3s ease;
+}
+
+.analytics-tool-card:hover .tool-icon {
+    transform: scale(1.1);
+}
+
+.analytics-tool-card .tool-icon i {
+    transition: all 0.3s ease;
+}
+
+.analytics-tool-card:hover .tool-icon i {
+    color: var(--accent-color) !important;
+}
+
+.analytics-tool-card h6 {
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.analytics-tool-card:hover h6 {
+    color: var(--primary-color);
+}
+
+.analytics-tool-card ul li {
+    margin-bottom: 0.25rem;
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+}
+
+.analytics-tool-card ul li i {
+    font-size: 0.75rem;
+}
+
+/* Enhanced tech stack styling for analytics section */
+.tech-stack h6 {
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.tech-stack ul li {
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+    margin-bottom: 0.25rem;
+    transition: color 0.2s ease;
+}
+
+.tech-stack ul li:hover {
+    color: var(--primary-color);
+}
+
+/* Responsive adjustments for analytics tools */
+@media (max-width: 768px) {
+    .analytics-tool-card {
+        margin-bottom: 1rem;
+    }
+    
+    .analytics-tool-card .tool-icon i {
+        font-size: 2.5rem !important;
+    }
+    
+    .tech-stack {
+        margin-bottom: 1.5rem;
+    }
+}
+
+/* Use Case Cards for ML Section */
+.use-case-card {
+    background: white;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.use-case-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.use-case-card:hover::before {
+    transform: scaleX(1);
+}
+
+.use-case-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--primary-color);
+}
+
+.use-case-card .use-case-icon {
+    width: 3rem;
+    height: 3rem;
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    color: white;
+    font-size: 1.25rem;
+    transition: all 0.3s ease;
+}
+
+.use-case-card:hover .use-case-icon {
+    transform: scale(1.1);
+}
+
+.use-case-card h6 {
+    color: var(--text-primary);
+    margin-bottom: 0.75rem;
+    transition: color 0.3s ease;
+}
+
+.use-case-card:hover h6 {
+    color: var(--primary-color);
+}
+
+.use-case-card ul li {
+    margin-bottom: 0.25rem;
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    transition: color 0.2s ease;
+}
+
+.use-case-card:hover ul li {
+    color: var(--text-primary);
+}
+
+/* Enhanced ML section styling */
+#ai-services .service-card {
+    border: 1px solid var(--border-color);
+}
+
+#ai-services .service-card:hover {
+    border-color: var(--primary-color);
+}
+
+#ai-services .tech-stack h6 {
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+#ai-services .tech-stack ul li {
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+    margin-bottom: 0.25rem;
+    transition: color 0.2s ease;
+    padding: 0.25rem 0;
+}
+
+#ai-services .tech-stack ul li:hover {
+    color: var(--primary-color);
+    background-color: var(--light-bg);
+    border-radius: 0.25rem;
+    padding-left: 0.5rem;
+}
+
+/* Responsive adjustments for ML section */
+@media (max-width: 768px) {
+    .use-case-card {
+        margin-bottom: 1rem;
+    }
+    
+    .use-case-card .use-case-icon {
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: 1rem;
+    }
+    
+    #ai-services .tech-stack {
+        margin-bottom: 1.5rem;
+    }
+}
