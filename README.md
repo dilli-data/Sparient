@@ -8,6 +8,8 @@ A modern, responsive website showcasing Sparient's comprehensive IT solutions in
 - **Data Engineering**: Data warehouse, lakehouse, and ETL solutions
 - **AI/ML Services**: Machine learning, generative AI, and analytics
 - **DevOps**: CI/CD, containerization, and infrastructure as code
+- **ERP & Integration**: PeopleSoft, Salesforce, Boomi, and enterprise solutions
+- **Enterprise Content Management**: Adobe AEM, OnBase, FileNet, and ECM solutions
 - **Traditional IT**: SharePoint, enterprise apps, mobile development
 - **Modern UI/UX**: Bootstrap 5.3.2, responsive design, smooth animations
 
